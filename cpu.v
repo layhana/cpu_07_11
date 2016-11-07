@@ -15,5 +15,7 @@ module cpu_07_11(clock, reset, mReadFlag, mWriteFlag,
 	
 	wire ac_src, ld_ac, pc_src, jmp_uncond;
 	
+	memoria mem(rd,wr,adress,inDataBus,outDataBus);
+	InstrucoesdaMemoriaROM rom(address,dataOut);
 endmodule
 	

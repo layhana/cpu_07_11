@@ -57,3 +57,54 @@ opcode[2] <= <GND>
 opcode[3] <= <GND>
 
 
+|cpu_07_11|memoria:mem
+rd => outDataBus[0]$latch.LATCH_ENABLE
+rd => outDataBus[1]$latch.LATCH_ENABLE
+rd => outDataBus[2]$latch.LATCH_ENABLE
+rd => outDataBus[3]$latch.LATCH_ENABLE
+rd => outDataBus[4]$latch.LATCH_ENABLE
+rd => outDataBus[5]$latch.LATCH_ENABLE
+rd => outDataBus[6]$latch.LATCH_ENABLE
+rd => outDataBus[7]$latch.LATCH_ENABLE
+wr => memory.WE
+adress[0] => memory.WADDR
+adress[0] => memory.RADDR
+adress[1] => memory.WADDR1
+adress[1] => memory.RADDR1
+adress[2] => memory.WADDR2
+adress[2] => memory.RADDR2
+adress[3] => memory.WADDR3
+adress[3] => memory.RADDR3
+inDataBus[0] => memory.DATAIN
+inDataBus[1] => memory.DATAIN1
+inDataBus[2] => memory.DATAIN2
+inDataBus[3] => memory.DATAIN3
+inDataBus[4] => memory.DATAIN4
+inDataBus[5] => memory.DATAIN5
+inDataBus[6] => memory.DATAIN6
+inDataBus[7] => memory.DATAIN7
+outDataBus[0] <= outDataBus[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outDataBus[1] <= outDataBus[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outDataBus[2] <= outDataBus[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outDataBus[3] <= outDataBus[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outDataBus[4] <= outDataBus[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outDataBus[5] <= outDataBus[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outDataBus[6] <= outDataBus[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+outDataBus[7] <= outDataBus[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cpu_07_11|InstrucoesdaMemoriaROM:rom
+address[0] => rom.RADDR
+address[1] => rom.RADDR1
+address[2] => rom.RADDR2
+address[3] => rom.RADDR3
+dataOut[0] <= rom.DATAOUT
+dataOut[1] <= rom.DATAOUT1
+dataOut[2] <= rom.DATAOUT2
+dataOut[3] <= rom.DATAOUT3
+dataOut[4] <= rom.DATAOUT4
+dataOut[5] <= rom.DATAOUT5
+dataOut[6] <= rom.DATAOUT6
+dataOut[7] <= rom.DATAOUT7
+
+
