@@ -1,0 +1,14 @@
+module cpu(clock, reset, mReadFlag, mWriteFlag,
+	instMemAddrBus, instMemDataBus, dataMemAddrBus,
+	dataMemInDataBus, dataMemOutDataBus,
+	accOut, aluOut, opcode);
+	
+	input clock, reset;
+	output mReadFlag, mWriteFlag; // Flags que habilitam operaçoes de leitura e escrita na memoria, respectivamente
+	output [3:0] instMemAddrBus; // Endereço da instruçao na memoria
+	input [7:0] instMemDataBus; // Dado (8 bits) advindo da memoria de instruçao
+	
+	
+	
+endmodule
+	
