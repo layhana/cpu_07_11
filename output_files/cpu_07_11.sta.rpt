@@ -1,5 +1,9 @@
 TimeQuest Timing Analyzer report for cpu_07_11
+<<<<<<< HEAD
 Mon Nov  7 17:12:47 2016
+=======
+Mon Nov  7 16:22:15 2016
+>>>>>>> 568e18062c4b970211c82d81176e582a7dd4bebc
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -207,7 +211,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Mon Nov  7 17:12:47 2016
+=======
+    Info: Processing started: Mon Nov  7 16:22:14 2016
+>>>>>>> 568e18062c4b970211c82d81176e582a7dd4bebc
 Info: Command: quartus_sta cpu_07_11 -c cpu_07_11
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -240,9 +248,15 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+<<<<<<< HEAD
     Info: Peak virtual memory: 594 megabytes
     Info: Processing ended: Mon Nov  7 17:12:47 2016
     Info: Elapsed time: 00:00:00
+=======
+    Info: Peak virtual memory: 595 megabytes
+    Info: Processing ended: Mon Nov  7 16:22:15 2016
+    Info: Elapsed time: 00:00:01
+>>>>>>> 568e18062c4b970211c82d81176e582a7dd4bebc
     Info: Total CPU time (on all processors): 00:00:00
 
 
