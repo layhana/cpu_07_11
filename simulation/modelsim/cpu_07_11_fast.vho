@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition"
 
--- DATE "11/08/2016 09:23:22"
+-- DATE "11/08/2016 15:23:12"
 
 -- 
 -- Device: Altera EP2C20F484C7 Package FBGA484

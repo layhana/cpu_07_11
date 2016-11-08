@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cpu_07_11
-Tue Nov  8 09:23:11 2016
+Tue Nov  8 15:23:01 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov  8 09:23:11 2016              ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov  8 15:23:01 2016              ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1.78 SJ Web Edition ;
 ; Revision Name                      ; cpu_07_11                                          ;
 ; Top-level Entity Name              ; cpu_07_11                                          ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition
-    Info: Processing started: Tue Nov  8 09:23:10 2016
+    Info: Processing started: Tue Nov  8 15:23:00 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu_07_11 -c cpu_07_11
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ContadorDePrograma.v
@@ -288,6 +288,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file rom.v
     Info (12023): Found entity 1: InstrucoesdaMemoriaROM
 Info (12021): Found 1 design units, including 1 entities, in source file UnidadeControle.v
     Info (12023): Found entity 1: UnidadeControle
+Info (12021): Found 1 design units, including 1 entities, in source file IncrementodoContador.v
+    Info (12023): Found entity 1: IncrementodoContador
+Info (12021): Found 1 design units, including 1 entities, in source file Mux2to1_4bit.v
+    Info (12023): Found entity 1: Mux2to1_4bit
+Info (12021): Found 1 design units, including 1 entities, in source file Mux2to1_8bit.v
+    Info (12023): Found entity 1: Mux2to1_8bit
 Warning (10236): Verilog HDL Implicit Net warning at CaminhoDeDados.v(26): created implicit net for "dm_out_dbus"
 Warning (10236): Verilog HDL Implicit Net warning at CaminhoDeDados.v(29): created implicit net for "im_abus"
 Warning (10236): Verilog HDL Implicit Net warning at cpu.v(18): created implicit net for "rd"
@@ -386,8 +392,8 @@ Info (21057): Implemented 56 device resources after synthesis - the final resour
     Info (21058): Implemented 22 input pins
     Info (21059): Implemented 34 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 81 warnings
-    Info: Peak virtual memory: 698 megabytes
-    Info: Processing ended: Tue Nov  8 09:23:11 2016
+    Info: Peak virtual memory: 700 megabytes
+    Info: Processing ended: Tue Nov  8 15:23:01 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
