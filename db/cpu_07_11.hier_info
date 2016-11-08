@@ -1,8 +1,8 @@
 |cpu_07_11
 clock => ~NO_FANOUT~
 reset => ~NO_FANOUT~
-mReadFlag <= <GND>
-mWriteFlag <= <GND>
+mReadFlag <= UnidadeControle:ud.port1
+mWriteFlag <= UnidadeControle:ud.port2
 instMemAddrBus[0] <= <GND>
 instMemAddrBus[1] <= <GND>
 instMemAddrBus[2] <= <GND>
@@ -51,10 +51,10 @@ aluOut[4] <= <GND>
 aluOut[5] <= <GND>
 aluOut[6] <= <GND>
 aluOut[7] <= <GND>
-opcode[0] <= <GND>
-opcode[1] <= <GND>
-opcode[2] <= <GND>
-opcode[3] <= <GND>
+opcode[0] <= UnidadeControle:ud.port0
+opcode[1] <= UnidadeControle:ud.port0
+opcode[2] <= UnidadeControle:ud.port0
+opcode[3] <= UnidadeControle:ud.port0
 
 
 |cpu_07_11|memoria:mem
@@ -106,5 +106,18 @@ dataOut[4] <= rom.DATAOUT4
 dataOut[5] <= rom.DATAOUT5
 dataOut[6] <= rom.DATAOUT6
 dataOut[7] <= rom.DATAOUT7
+
+
+|cpu_07_11|UnidadeControle:ud
+opcode[0] => Decoder0.IN3
+opcode[1] => Decoder0.IN2
+opcode[2] => Decoder0.IN1
+opcode[3] => Decoder0.IN0
+mReadFlag <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+mWriteFlag <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ac_src <= <GND>
+ld_ac <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+pc_src <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+jmp_uncond <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 

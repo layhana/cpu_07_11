@@ -16,11 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1.78 SJ Web Edition"
 
-<<<<<<< HEAD
--- DATE "11/07/2016 17:12:49"
-=======
--- DATE "11/07/2016 16:22:17"
->>>>>>> 568e18062c4b970211c82d81176e582a7dd4bebc
+-- DATE "11/08/2016 09:23:22"
 
 -- 
 -- Device: Altera EP2C20F484C7 Package FBGA484
@@ -247,7 +243,7 @@ GENERIC MAP (
 	output_sync_reset => "none")
 -- pragma translate_on
 PORT MAP (
-	datain => GND,
+	datain => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	devoe => ww_devoe,

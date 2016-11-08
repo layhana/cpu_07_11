@@ -17,5 +17,6 @@ module cpu_07_11(clock, reset, mReadFlag, mWriteFlag,
 	
 	memoria mem(rd,wr,adress,inDataBus,outDataBus);
 	InstrucoesdaMemoriaROM rom(address,dataOut);
+	UnidadeControle ud(opcode,mReadFlag,mWriteFlag, ac_src, ld_ac, pc_src, jmp_uncond);
 endmodule
 	
