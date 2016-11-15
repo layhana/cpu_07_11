@@ -4,6 +4,6 @@ input [3:0]i0,i1;
 input sel;
 output [3:0]mux_out;
 
-assign mux_out = sel? i1 : i0; // Se sel for 1 a saida sera i1 .
+assign mux_out = sel? i1 : i0; // Se sel for 1, a saida sera i1, c.c. i0.
 
 endmodule 

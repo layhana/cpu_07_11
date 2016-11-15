@@ -18,7 +18,7 @@ jmp_uncond = 1'b0;
 			begin
 			mReadFlag = 1'b0;
 			mWriteFlag = 1'b1;
-			//ld _ac =
+			ld_ac = 1'b1;
 			//ac_src = 
 			end
 		4'b0001:		//soma

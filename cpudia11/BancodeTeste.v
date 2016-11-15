@@ -1,4 +1,4 @@
-module BancodeTeste; 
+module BancodeTeste(LEDR); 
 reg clock; 
 reg reset; 
 wire [7:0] dataMemInDataBus; 
@@ -12,12 +12,14 @@ wire [3:0] dataMemAddrBus;
 wire [7:0] accOut,aluOut; 
 wire [3:0] opcode; 
 
-cpu_07_11 mcpu(.clock(clock),.reset(reset), .mReadFlag(mReadFlag), .mWriteFlag(mWriteFlag),
+output [9:0] LEDR;
+
+cpudia11 mcpu(.clock(clock),.reset(reset), .mReadFlag(mReadFlag), .mWriteFlag(mWriteFlag),
 	.instMemAddrBus(instMemAddrBus), .instMemDataBus(instMemDataBus), .dataMemAddrBus(dataMemAddrBus),
 	.dataMemInDataBus(dataMemInDataBus), .dataMemOutDataBus(dataMemOutDataBus),
 	.accOut(accOut), .aluOut(aluOut), .opcode(opcode));
 
-InstrucoesdaMemoriaROM IM(.address(instMemAddrBus), .dataOut(dataMemInDataBus));
+rom IM(.address(instMemAddrBus), .dataOut(dataMemInDataBus));
 //InstructionMemory IM (.abus(instMemAddrBus),.dbus(im_dbus));
 
 memoria DM(.rd(mReadFlag) ,.wr(mWriteFlag) ,.adress(instMemDataBus),.inDataBus(dataMemAddrBus) , .outDataBus(dataMemOutDataBus));
